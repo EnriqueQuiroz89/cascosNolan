@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Uso Flexbox</title>
+    <style>
+        body {
+            background: linear-gradient(red, white, green);
+            height: 100vh;
+        }
+
+        #box-container {
+            width: 70vw;
+            height: 23vw;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: transparent;
+            justify-content: space-evenly;
+            padding: 10px 0px;
+        }
+
+        .box {
+            width: 30%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        #box-1 {
+            background-color: black;
+        }
+
+        #box-2 {
+            background-color: orangered;
+        }
+
+        #box-3 {
+            background-color: chocolate;
+        }
+
+        .img-responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            background: transparent;
+            text-align: center;
+
+
+        }
+
+        ul {
+            margin: 3px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style: none;
+            width: 70vw;
+        }
+
+        li {
+
+            font-size: x-large;
+            background-color: gold;
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+
+        @media (max-width:400px) {
+            #box-container {
+                width: 95vw;
+                height: 31vw;
+                margin: 5px auto;
+                display: flex;
+                flex-direction: row;
+                background-color: transparent;
+                justify-content: space-evenly;
+                padding: 5px 0px;
+            }
+
+            ul {
+                width: 95vw;
+                justify-content: space-around;
+            }
+
+            li {
+                font-size: small;
+                background-color: gold;
+                padding: 5%;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                text-align: center;
+            }
+
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Importados</li>
+                <li>Nacionales</li>
+                <li>Edicion Especial</li>
+                <li>Outlet</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <h1> &#128512; Cascos Belle Italia &#128512;</h1>
+
+
+    <div id="box-container">
+        <div class="box" id="box-1">
+            <img class="img-responsive"
+                src="https://paramoto.com.mx/wp-content/uploads/2018/05/CASCO-NOLAN-ABATIBLE-N104-300x300.jpg"
+                alt="casco marca CASCO-NOLAN-ABATIBLE-N104-300x300">
+        </div>
+        <div class="box" id="box-2">
+            <img class="img-responsive"
+                src="https://www.seam-motos.com.mx/productos/m/Casco-Nolan-N100-5-Plus-Distinctive-Abatible--691831.jpg"
+                alt="Casco-Nolan-N100-5-Plus-Distinctive-Abatible--691831">
+        </div>
+        <div class="box" id="box-3">
+            <img class="img-responsive"
+                src="https://www.seam-motos.com.mx/productos/m/Casco-Nolan-N100-5-Hi-Vis-N-com--823710.jpg"
+                alt="Casco-Nolan-N100-5-Hi-Vis-N-com--823710">
+        </div>
+    </div>
+
+    <div id="box-container">
+        <div class="box" id="box-1">
+            <img class="img-responsive"
+                src="https://motozonaljarafe.com/wp-content/uploads/2020/09/casco-nolan-n87-plus-distinctive-n-com-blanco-verde-rojo-300x300.jpg"
+                alt="casco-nolan-n87-plus-distinctive-n-com-blanco-verde-rojo-300x300">
+        </div>
+        <div class="box" id="box-2">
+            <img class="img-responsive"
+                src="https://cdn.shopify.com/s/files/1/0270/8992/8310/products/n21-visor-duetto-abierto-norma-europea-ece-22-05_300x.jpg?v=1588004627"
+                alt="n21-visor-duetto-abierto-norma-europea-ece-22-05_300x">
+        </div>
+        <div class="box" id="box-3">
+            <img class="img-responsive"
+                src="https://cdn.shopify.com/s/files/1/0270/8992/8310/products/n60-5-replica-cerrado-norma-europea-ece-22-05_300x.jpg?v=1588001671"
+                alt="n21-visor-duetto-abierto-norma-europea-ece-22-05_300x">
+
+        </div>
+    </div>
+
+</body>
+
+<footer>
+
+</footer>
+
+
+
+
+
+
+
+
+</html>
